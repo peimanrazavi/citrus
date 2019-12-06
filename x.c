@@ -1,4 +1,5 @@
 #include<stdio.h>
+//calculating power
 int power(int a, int b)
 {
 	int temp = 1;

@@ -17,12 +17,11 @@ int main()
 {
     int a[5];
     for(int i=0;i<5;i++){
-        cout<<"enter the numbers";
-        cin>>a[1];
+        cin>>a[i];
     }
     bubbls(a);
     for(int j=0;j<5;j++){
-        cout<<a[j];
+        cout<<a[j]<<"\n";
     }
     return 0;
 }
