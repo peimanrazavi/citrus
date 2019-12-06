@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
- void bubbls(int a[]){
+ int* bubbls(int a[]){
 
     for(int i=0;i<5;i++){
         for(int j=i;j<5;j++){
@@ -12,17 +12,19 @@ using namespace std;
             }
         }
     }
+    return a;
  }
 int main()
 {
     int a[5];
     for(int i=0;i<5;i++){
-        cout<<"enter the numbers";
-        cin>>a[1];
+        cout<<"enter the numbers"<<endl;
+        cin>>a[i];
     }
-    bubbls(a);
+    int*m;
+    m=bubbls(a);
     for(int j=0;j<5;j++){
-        cout<<a[j];
+        cout<<*(m+j)<<endl;
     }
     return 0;
 }
